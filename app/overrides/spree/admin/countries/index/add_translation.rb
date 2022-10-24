@@ -1,7 +1,7 @@
 Deface::Override.new(
   virtual_path:  'spree/admin/countries/index',
   name:          'countries_index_translation',
-  insert_top:    'td.actions',
+  insert_top:    'td.actions > span.d-flex',
   text:          <<-HTML
                   <%= link_to_with_icon 'translate', nil, spree.admin_translations_path('countries', country.id), title: Spree.t(:'i18n.translations'), class: 'btn btn-sm btn-primary' %>
                 HTML
